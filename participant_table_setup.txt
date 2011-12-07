@@ -1,0 +1,28 @@
+create table participant
+(participant_ID int NOT NULL,
+native_language varchar(255),
+p_age int(100),
+p_gender varchar(10),
+p_study varchar(255),
+p_country_lived_in varchar(255),
+p_years_lived_in_country int(100),
+p_language_to_mother varchar(255),
+p_language_to_father varchar(255),
+p_years_learning_english int(26),
+p_years_learning_french int(13),
+p_years_learning_german int(13),
+p_years_learning_russian int(13),
+p_years_learning_italian int(13),
+p_years_learning_spanish int(13),
+p_years_learning_ancientGreek int(13),
+p_years_learning_latin int(13),
+p_years_learning_other int(13),
+p_using_english_in_speaking varchar(255),
+p_using_english_watching_tv varchar(255),
+p_using_english_playing_games varchar(255),
+p_using_english_chatting varchar(255),
+p_using_english_talking varchar(255),
+p_using_english_reading varchar(255),
+
+primary key (participant_ID)
+)

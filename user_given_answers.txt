@@ -1,0 +1,8 @@
+create table user_given_answers (
+pID int,
+qID int,
+p_given_ans varchar(255),
+primary key (participant_ID, qID),
+foreign key (pID) references participant(pID),
+foreign key (qID) references question_table(qID)
+)

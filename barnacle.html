@@ -77,6 +77,8 @@
 <option value="Swedish">Swedish</option>
 <option value="Other">Other</option>
 </select>
+</div>
+</form>
 </p>	
 
 	
@@ -89,19 +91,21 @@
 <input type="radio" name="group1" value="onceayear"> Once a year	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <input type="radio" name="group1" value="never">Never	<br>
 </div>
+</form>
 </p>	
 	
 <p>
 <form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
 <div align="center"><br>
-Ugly &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<i>Ugly</i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <input type="radio" name="attitude" value="1" checked> 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <input type="radio" name="attitude" value="2" > 2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <input type="radio" name="attitude" value="3"> 3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <input type="radio" name="attitude" value="4"> 4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<input type="radio" name="attitude" value="5"> 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Beautiful <br>
+<input type="radio" name="attitude" value="5"> 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>Beautiful</i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="attitude" value="no opinion"> I have no opinion.<br>
 </div>
+</form>
 </p>	
 	
 <p>
@@ -115,12 +119,160 @@ Not at all &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <input type="radio" name="understanding" value="5"> 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Very well <br>
 </div>
+</form>
 </p>	
 
+
+
+
+
+<p>
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+<div align="left">
+What is your age? &nbsp;&nbsp;
+<select name="mydropdown">
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="90">90</option>
+<option value="100">100</option>
+</select>
+</div>
+</form>
+</p>	
+
+<p>
+
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+<div align="left">
+What is your gender? &nbsp;&nbsp;
+<input type="radio" name="gender" value="male" checked> Male &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="gender" value="female" > Female &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+</div>
+</form>
+</p>
+
+
+<p>
+What do you study? &nbsp;&nbsp;
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+<div align="left">
+<input type="text" size="50" value="">
+<br><br>
+</div>
+</form>
+</p>
+
+<p>
+In which country have you lived most of your life? [dropdown with list of relevant countries + the option “other”] 
+[zie ook eerste keuzelijst]
+<p>
+
+<p>
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+<div align="left">
+How many years have you lived there? &nbsp;&nbsp;
+<script language="JavaScript">
+function onlyNumbers(evt)
+{
+	var e = event || evt; // for trans-browser compatibility
+	var charCode = e.which || e.keyCode;
+
+	if (charCode > 31 && (charCode < 48 || charCode > 57))
+		return false;
+
+	return true;
+
+}
+</script>
+<input type="text" size="2" value="" onkeypress="return onlyNumbers();">
+<br><br>
+
+
+</div>
+</form>
+</p>
+
+<p>
+6. Which language do you speak to your mother? (all the project languages + the option “other”. If they choose other, they get a space to write which language)
+
+7. Which language do you speak to your father? (all the project languages + the option “other”. If they choose other, they get a space to write which language)
+</p>
+
+
+
+<p>
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+<div align="left">
+How many years have you spent learning English? &nbsp;&nbsp;
+<select name="mydropdown">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+</select>
+</div>
+</form>
+</p>
+
+
+
+
+<p>
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+<div align="left">
+[9. The following questions with a dropdown 0-12 years:]
+How many years have you spent learning French? &nbsp;&nbsp;
+<select name="mydropdown">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+</div>
+</form>
+</p>
+
+
+
+	</div>
+	</div>
+	</div>
 	
-	</div>
-	</div>
-	</div>
+
 
 </body>
 </html>

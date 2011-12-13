@@ -4,5 +4,5 @@ question_nr(255),
 questiontext varchar(255),
 language_tag varchar(255),
 primary key (qID)
-
+correct_answer varchar(255),
 )

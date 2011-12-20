@@ -100,6 +100,7 @@ a.button{
 	 text-decoration: none;
 	 display: block;
 	 width: 9em;
+	 text-align: center;
 	 /*fix for IE6 bug */
 	 zoom: 1;
 }

@@ -12,6 +12,7 @@ html {
 		 min-width: 960px;
 		 max-width: 1680px;
 }
+
 /* main body styles*/
 body {
 		background-color: #FFF;
@@ -74,17 +75,6 @@ body {
 	 padding: 10px;
 	 border-top: 1px dotted #CCC;
 }
-/*form styles*/
-
-.subForm .label{
-				 float: left;
-				 width: 230px;
-				 margin-right: 10px;
-				 text-align: right;
-				 font-weight: bold;
-				 clear:left;
-}
-
 /*style for buttons*/
 a.button{
 	 background-color: #C00; 
@@ -100,6 +90,7 @@ a.button{
 	 text-decoration: none;
 	 display: block;
 	 width: 9em;
+	 text-align: center;
 	 /*fix for IE6 bug */
 	 zoom: 1;
 }
@@ -112,23 +103,57 @@ a.button:hover{
 	border-left: 4px solid #777;
 	border-bottom: 4px solid #444;
 }
-#subForm {
-	font-size: .8em;
+
+/*form styles: put the subform class in the form declaration,
+the lable class in the label declaration unless it is a
+radiobutton, then use a span declaration for the question
+and put the label class in there. */
+.subForm {
+  font-size: 1.1em;
 }
-#subForm p{
+.subForm p{
   color: #333;
 }
-#subForm .label {
+.subForm .label {
 	float: left;
-	width: 150px;
+	width: 350px;
 	margin-right: 10px;
 	text-align: right;
 	clear: left;
 }
 
 #submit {
-	margin-left: 240px;
+	float: right;
 	background-color: #C00;
 	color: #FFF;
 	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
 }
+
+/* table styles */
+
+caption {
+  text-align: right;
+  font-size: 1.3em;
+  padding-top: 25px;
+	color: #666;
+}
+table {
+		text-align: center;
+		border-collapse: collapse;
+		margin: 0px auto 0px auto;
+}
+td, th{
+		padding: 10px 5px 3px 5px;
+		border: 1px solid #666;
+}
+th {
+	 text-transform: uppercase;
+}
+tr {
+	 color: #666;
+}
+tr.alt td {
+	 background-color: #C00;
+	 color: #FFF;
+}
+

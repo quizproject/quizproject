@@ -27,8 +27,10 @@
 <div id="maincontent">
 <h1>Welcome to the test, to begin please answer the following question.</h1>
 
-<form class="subForm" method="post">
-
+<form class="subForm" method="post" action="page2.php">
+   <?php
+		$yourname = htmlspecialchars($_POST['refer']);
+   ?>
    <p>	
 	    <label for="refer" class="label"> What language do you want to take the test in? </label>
 	    <select name="refer" id="refer">
@@ -62,6 +64,7 @@
 	  <p>
 	    <input type="submit" name="Submit" id="submit" value="Next" />
 	  </p>
+	  
 	  </form>
 </div>
 <div id="footer"></div>

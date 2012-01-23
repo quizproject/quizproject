@@ -1,0 +1,159 @@
+/* reset styles */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+/* end reset styles */
+
+html { 
+		 background-color: #FFF;
+		 min-width: 960px;
+		 max-width: 1680px;
+}
+
+/* main body styles*/
+body {
+		background-color: #FFF;
+		width: 960px;
+	  margin: 0 auto 10px auto;
+		border: 1px dotted #CCC;
+		color: #333;
+		font-size: 0.9em;
+		font-family: Arial, Helvetica, sans-serif;
+		
+}
+/*main header styles*/
+#header {
+		 background: url(stripees1.png) repeat-x left bottom;
+		 height: 80px;
+		 padding: 20px;
+}
+/*logo style*/
+#header a{
+		 float: left;
+}
+/* Removes blue border around logo in IE9 */
+#header a img {
+			border-style: none;
+}
+/*content wrapper: will never be less high than 300px; will stretch to fit content */
+#wrapper{
+		min-height: 300px;
+}
+/*comment bar for research title*/
+#topbar {
+		background-color: #C00;
+		padding: 5px 10px 5px 10px;
+		color: white;
+}
+/*main content area for quiz*/
+#maincontent{
+		padding: 30px;
+		min-height: 300px;
+}
+/*main header*/
+#maincontent h1{
+		font-size: 1.5em;
+	  color: #C00;
+}
+/*subheader/introductory paragraph*/
+#maincontent h2{
+		text-indent: 25px;
+		font-size: 1.1em;
+		color: #C00;
+}
+/*paragraph styles*/
+#maincontent p{
+	  margin: 10px 0 10px 0;
+		line-height: 1.4;
+}
+/*footer for perhaps contact info/ back and forward buttons */
+#footer {
+	 height: 20px;
+	 padding: 10px;
+	 border-top: 1px dotted #CCC;
+}
+/*style for buttons*/
+a.button{
+	 background-color: #C00; 
+   width: 150px;
+	 padding: 5px;
+	 margin: 5px 5px 5px 30px;
+	 border-top: 4px solid #F00;
+	 border-right: 4px solid #D00;
+	 border-left: 4px solid #D00;
+	 border-bottom: 4px solid #700;
+	 color: #FFF;
+	 font-family: Tahoma, Arial, Helvetica, sans-serif;
+	 text-decoration: none;
+	 display: block;
+	 width: 9em;
+	 text-align: center;
+	 /*fix for IE6 bug */
+	 zoom: 1;
+}
+/*hover style for buttons */
+a.button:hover{
+  background-color: #CCC;
+	color: #000;
+	border-top: 4px solid #999;
+	border-right: 4px solid #777;
+	border-left: 4px solid #777;
+	border-bottom: 4px solid #444;
+}
+
+/*form styles: put the subform class in the form declaration,
+the lable class in the label declaration unless it is a
+radiobutton, then use a span declaration for the question
+and put the label class in there. */
+.subForm {
+  font-size: 1.1em;
+}
+.subForm p{
+  color: #333;
+}
+.subForm .label {
+	float: left;
+	width: 350px;
+	margin-right: 10px;
+	text-align: right;
+	clear: left;
+}
+
+#submit {
+	float: right;
+	background-color: #C00;
+	color: #FFF;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+}
+
+/* table styles */
+
+caption {
+  text-align: right;
+  font-size: 1.3em;
+  padding-top: 25px;
+	color: #666;
+}
+table {
+		text-align: center;
+		border-collapse: collapse;
+		margin: 0px auto 0px auto;
+}
+td, th{
+		padding: 10px 5px 3px 5px;
+		border: 1px solid #666;
+}
+th {
+	 text-transform: uppercase;
+}
+tr {
+	 color: #666;
+}
+tr.alt td {
+	 background-color: #C00;
+	 color: #FFF;
+}
+

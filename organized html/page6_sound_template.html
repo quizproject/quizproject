@@ -14,18 +14,17 @@
 		 Mutual intelligibility of closely related languages in Europe: linguistic and non-linguistic determinants
 </div>
 <div id="maincontent">
-
-<!---template only to check if object works. Does not contain language identifier, needs a lot of php here ---->
-<p>How beautiful do you find this language?
+<form class="subForm" action="page7.php">
+	<!---template only to check if object works. Does not contain language identifier, needs a lot of php here ---->
+	<p>How beautiful do you find this language?
 	<span class="label">Beautiful</span>
 		<label> <input name="Beautiful" type="radio" value="1" />1</label>
 		<label> <input name="Beautiful" type="radio" value="2" />2</label>
 		<label> <input name="Beautiful" type="radio" value="3" />3</label>
 		<label> <input name="Beautiful" type="radio" value="4" />4</label>
 		<label> <input name="Beautiful" type="radio" value="5" />5  ugly</label>
- </p>
-
-<p>
+	</p>
+	<p>
 	    <label for="refer" class="label">Do you know which language this is? </label>
 	    <select name="refer" id="refer">
 
@@ -55,11 +54,12 @@
         <option value="Other">Other</option>
         </select>
 	  </p>
-<!---invisible object, plays .mp3 file at default volume, full open. Set volume to taste with your own buttons/volume knob ----> 
-<p><object height="0px" width="0px" data="B.B. King - Ghetto Woman.mp3" /></p>
-<p>
+	  <!---invisible object, plays .mp3 file at default volume, full open. Set volume to taste with your own buttons/volume knob ----> 
+	  <p><object height="0px" width="0px" data="B.B. King - Ghetto Woman.mp3" /></p>
+      <p>
 	    <input type="submit" name="Submit" id="submit" value="Next" />
 	  </p>
+</form>	  
 </div>
 <div id="footer"></div>
 </body>

@@ -109,14 +109,17 @@ the lable class in the label declaration unless it is a
 radiobutton, then use a span declaration for the question
 and put the label class in there. */
 .subForm {
-  font-size: 1.1em;
+  font-size: 1em;
+}
+.subForm h1{
+	float: left;
 }
 .subForm p{
   color: #333;
 }
 .subForm .label {
 	float: left;
-	width: 350px;
+	width: 400px;
 	margin-right: 10px;
 	text-align: right;
 	clear: left;
